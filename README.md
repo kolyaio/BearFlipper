@@ -1,7 +1,6 @@
 # BearFlipper
-![BearFlipper](https://raw.githubusercontent.com/kolyaio/BearFlipper/master/Logo.png)
 
-<img src="https://raw.githubusercontent.com/kolyaio/BearFlipper/master/Logo.png" alt="Bear Flipper" width="100">
+<img src="https://raw.githubusercontent.com/kolyaio/BearFlipper/master/Logo.png" alt="Bear Flipper" width="150">
 
 It's my little app built for iOS, It's a basic coin flipper but with a cute bear on the coin. 
 
@@ -15,7 +14,8 @@ My email: [me@kx.ax](mailto:me@kx.ax) or my [twitter](https://twitter.com/kolyai
 
 
 ### Screenshots:
+<img src="https://raw.githubusercontent.com/kolyaio/BearFlipper/master/screenshot1.png" alt="Screen Shot" width="350
+">
 
-![BearFlipper Screenshoot 1](https://raw.githubusercontent.com/kolyaio/BearFlipper/master/screenshot1.png)
-
-![BearFlipper Screenshoot 1](https://raw.githubusercontent.com/kolyaio/BearFlipper/master/screenshot2.png)
+<img src="https://raw.githubusercontent.com/kolyaio/BearFlipper/master/screenshot2.png" alt="Screen Shot" width="350
+">
