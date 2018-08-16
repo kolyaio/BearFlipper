@@ -1,5 +1,5 @@
 # BearFlipper
-![BearFlipper](https://raw.githubusercontent.com/kolyaio/BearFlipper/master/Assets/Front%20Coin.png)
+![BearFlipper](https://raw.githubusercontent.com/kolyaio/BearFlipper/master/Logo.png)
 
 
 It's my little app built for iOS, It's a basic coin flipper but with a cute bear on the coin. 
