@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="FrontCoin" translatesAutoresizingMaskIntoConstraints="NO" id="0RS-pA-dYi">
+                                <rect key="frame" x="-7" y="153" width="388" height="360"/>
+                                <color key="tintColor" red="0.98431372549019602" green="0.94117647058823528" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0RS-pA-dYi" secondAttribute="height" multiplier="358:347" constant="16.587896253602366" id="uge-5j-BKO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bear Flipper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40M-Y4-Ec5">
+                                <rect key="frame" x="20" y="50" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.98431372549019602" green="0.94117647058823528" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.43137254901960786" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0RS-pA-dYi" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" constant="6" id="2Z2-ky-M5M"/>
+                            <constraint firstItem="0RS-pA-dYi" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="-7" id="Biy-cU-Dk8"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="40M-Y4-Ec5" secondAttribute="trailing" constant="20" id="Cu9-6Y-Tra"/>
+                            <constraint firstItem="40M-Y4-Ec5" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" id="bXT-2C-SzG"/>
+                            <constraint firstItem="40M-Y4-Ec5" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="30" id="fOe-Zl-cEA"/>
+                            <constraint firstItem="0RS-pA-dYi" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" constant="-10.5" id="i8e-ku-Jzb"/>
+                            <constraint firstItem="0RS-pA-dYi" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" constant="-0.5" id="j3f-yl-vD3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FrontCoin" width="596" height="579"/>
+    </resources>
+</document>

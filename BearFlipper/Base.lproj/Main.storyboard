@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BearFliper-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="BearFliper" id="BYZ-38-t0r" customClass="ViewController" customModule="BearFlipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek9-Yx-HNJ">
+                                <rect key="frame" x="20" y="577" width="335" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <color key="tintColor" red="0.62745098039215685" green="0.47058823529411764" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Toss a coin"/>
+                                <connections>
+                                    <action selector="HeadOrTailButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVx-ij-w5a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head or Tails? what it will be?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-Qd-lTT">
+                                <rect key="frame" x="20" y="55" width="335" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.64313725490196083" green="0.45098039215686275" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrontCoin" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpY-qa-OtP">
+                                <rect key="frame" x="10" y="208" width="351" height="271"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XpY-qa-OtP" secondAttribute="height" multiplier="347:252" constant="-22.083333333333314" id="sPS-qF-WeH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.92941176470588238" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.62745098039215685" green="0.47058823529411764" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Zz-Qd-lTT" firstAttribute="top" secondItem="03V-ET-YlX" secondAttribute="top" constant="35" id="2bQ-BJ-xeE"/>
+                            <constraint firstItem="XpY-qa-OtP" firstAttribute="centerY" secondItem="03V-ET-YlX" secondAttribute="centerY" id="Dif-pB-mKe"/>
+                            <constraint firstItem="03V-ET-YlX" firstAttribute="bottom" secondItem="ek9-Yx-HNJ" secondAttribute="bottom" constant="50" id="F6W-i0-2Cn"/>
+                            <constraint firstItem="XpY-qa-OtP" firstAttribute="centerX" secondItem="03V-ET-YlX" secondAttribute="centerX" constant="-2" id="IzX-2e-HeJ"/>
+                            <constraint firstItem="7Zz-Qd-lTT" firstAttribute="leading" secondItem="03V-ET-YlX" secondAttribute="leading" constant="20" id="QWi-Bd-ltz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XpY-qa-OtP" secondAttribute="trailing" constant="-6" id="TYy-2N-fdj"/>
+                            <constraint firstItem="ek9-Yx-HNJ" firstAttribute="leading" secondItem="03V-ET-YlX" secondAttribute="leading" constant="20" id="ayF-TE-y2r"/>
+                            <constraint firstItem="03V-ET-YlX" firstAttribute="trailing" secondItem="7Zz-Qd-lTT" secondAttribute="trailing" constant="20" id="biQ-Od-3VD"/>
+                            <constraint firstItem="03V-ET-YlX" firstAttribute="trailing" secondItem="ek9-Yx-HNJ" secondAttribute="trailing" constant="20" id="eH8-h9-wMI"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                        <viewLayoutGuide key="safeArea" id="03V-ET-YlX"/>
+                    </view>
+                    <connections>
+                        <outlet property="coinImageView" destination="XpY-qa-OtP" id="xwS-Fz-umz"/>
+                        <outlet property="headOrTailLabel" destination="7Zz-Qd-lTT" id="VQB-3H-ROz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.5" y="131.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FrontCoin" width="596" height="579"/>
+    </resources>
+</document>
