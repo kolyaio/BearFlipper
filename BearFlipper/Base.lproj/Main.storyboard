@@ -20,40 +20,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek9-Yx-HNJ">
-                                <rect key="frame" x="20" y="577" width="335" height="40"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
-                                <color key="tintColor" red="0.62745098039215685" green="0.47058823529411764" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Toss a coin"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrontCoin" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpY-qa-OtP">
+                                <rect key="frame" x="-18" y="184.5" width="412" height="318"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XpY-qa-OtP" secondAttribute="height" multiplier="347:252" constant="-25.880952380952351" id="sPS-qF-WeH"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="HeadOrTailButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVx-ij-w5a"/>
+                                    <outletCollection property="gestureRecognizers" destination="CE5-ci-ZnH" appends="YES" id="EFx-Uj-vK3"/>
                                 </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head or Tails? what it will be?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-Qd-lTT">
-                                <rect key="frame" x="20" y="55" width="335" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="52.666666666666657" text="Head or Tails? what it will be?  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-Qd-lTT">
+                                <rect key="frame" x="20" y="20" width="335" height="52.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.64313725490196083" green="0.45098039215686275" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrontCoin" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpY-qa-OtP">
-                                <rect key="frame" x="10" y="208" width="351" height="271"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XpY-qa-OtP" secondAttribute="height" multiplier="347:252" constant="-22.083333333333314" id="sPS-qF-WeH"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="52.666666666666657" text="Click on Bear Coin!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5D-jf-IoQ">
+                                <rect key="frame" x="20" y="594.5" width="335" height="52.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.64313725489999995" green="0.45098039220000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.92941176470588238" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.62745098039215685" green="0.47058823529411764" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7Zz-Qd-lTT" firstAttribute="top" secondItem="03V-ET-YlX" secondAttribute="top" constant="35" id="2bQ-BJ-xeE"/>
+                            <constraint firstItem="7Zz-Qd-lTT" firstAttribute="top" secondItem="03V-ET-YlX" secondAttribute="top" id="2bQ-BJ-xeE"/>
                             <constraint firstItem="XpY-qa-OtP" firstAttribute="centerY" secondItem="03V-ET-YlX" secondAttribute="centerY" id="Dif-pB-mKe"/>
-                            <constraint firstItem="03V-ET-YlX" firstAttribute="bottom" secondItem="ek9-Yx-HNJ" secondAttribute="bottom" constant="50" id="F6W-i0-2Cn"/>
-                            <constraint firstItem="XpY-qa-OtP" firstAttribute="centerX" secondItem="03V-ET-YlX" secondAttribute="centerX" constant="-2" id="IzX-2e-HeJ"/>
-                            <constraint firstItem="7Zz-Qd-lTT" firstAttribute="leading" secondItem="03V-ET-YlX" secondAttribute="leading" constant="20" id="QWi-Bd-ltz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XpY-qa-OtP" secondAttribute="trailing" constant="-6" id="TYy-2N-fdj"/>
-                            <constraint firstItem="ek9-Yx-HNJ" firstAttribute="leading" secondItem="03V-ET-YlX" secondAttribute="leading" constant="20" id="ayF-TE-y2r"/>
-                            <constraint firstItem="03V-ET-YlX" firstAttribute="trailing" secondItem="7Zz-Qd-lTT" secondAttribute="trailing" constant="20" id="biQ-Od-3VD"/>
-                            <constraint firstItem="03V-ET-YlX" firstAttribute="trailing" secondItem="ek9-Yx-HNJ" secondAttribute="trailing" constant="20" id="eH8-h9-wMI"/>
+                            <constraint firstItem="XpY-qa-OtP" firstAttribute="centerX" secondItem="03V-ET-YlX" secondAttribute="centerX" constant="0.5" id="IzX-2e-HeJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XpY-qa-OtP" secondAttribute="trailing" constant="-39" id="TYy-2N-fdj"/>
+                            <constraint firstItem="m5D-jf-IoQ" firstAttribute="centerX" secondItem="03V-ET-YlX" secondAttribute="centerX" id="ajs-Hi-n9e"/>
+                            <constraint firstItem="7Zz-Qd-lTT" firstAttribute="leading" secondItem="03V-ET-YlX" secondAttribute="leading" constant="20" id="hRz-51-pZY"/>
+                            <constraint firstItem="03V-ET-YlX" firstAttribute="trailing" secondItem="7Zz-Qd-lTT" secondAttribute="trailing" constant="20" id="qEu-ZR-Rqf"/>
+                            <constraint firstItem="03V-ET-YlX" firstAttribute="bottom" secondItem="m5D-jf-IoQ" secondAttribute="bottom" constant="20" id="vhL-ud-c6U"/>
                         </constraints>
                         <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
                         <viewLayoutGuide key="safeArea" id="03V-ET-YlX"/>
@@ -64,8 +64,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CE5-ci-ZnH">
+                    <connections>
+                        <action selector="handleTapBear:" destination="BYZ-38-t0r" id="3Kn-OI-HaY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-82.5" y="131.25"/>
+            <point key="canvasLocation" x="-89.855072463768124" y="126.35869565217392"/>
         </scene>
     </scenes>
     <resources>

@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var coinImageView: UIImageView!
     
+    @IBAction func handleTapBear(_ sender: Any) {
+        self.handleHeadOrTail()
+    }
     @IBOutlet weak var headOrTailLabel: UILabel!
     
     override func viewDidLoad() {
@@ -24,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func HeadOrTailButton() {
+    func handleHeadOrTail() {
         coinImageView.image = FlipProvider().getRandomCoin()
         UIView.transition(with: coinImageView, duration: 0.4, options: [.transitionFlipFromBottom, .repeat], animations: {UIView.setAnimationRepeatCount(4)}, completion: { finished in
             self.coinImageView.image = FlipProvider().getRandomCoin()
