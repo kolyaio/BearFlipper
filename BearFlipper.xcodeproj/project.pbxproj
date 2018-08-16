@@ -24,6 +24,7 @@
 		23A1A999212543960067C0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A1A99F21254DD00067C0B4 /* FlipProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipProvider.swift; sourceTree = "<group>"; };
 		23A1A9A721258C3B0067C0B4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23A1A9C72125A3C20067C0B4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		23A1A981212543960067C0B4 = {
 			isa = PBXGroup;
 			children = (
+				23A1A9C72125A3C20067C0B4 /* README.md */,
 				23A1A98C212543960067C0B4 /* BearFlipper */,
 				23A1A98B212543960067C0B4 /* Products */,
 			);
